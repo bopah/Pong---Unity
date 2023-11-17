@@ -14,23 +14,23 @@ public class AudioManagerScript : MonoBehaviour
         {
             clip = collisionClips[0];
             collisionSource.PlayOneShot(clip);
-            Debug.Log("paddle sound, go!");
+            //Debug.Log("paddle sound, go!");
         }
         else if (surface == "TopBotWall")
         {
             clip = collisionClips[1];
             collisionSource.PlayOneShot(clip);
-            Debug.Log("top/bot wall sound, go!");
+            //Debug.Log("top/bot wall sound, go!");
         }
         else if (surface == "LeftRightWall")
         {
             clip = collisionClips[2];
             collisionSource.PlayOneShot(clip);
-            Debug.Log("left/right wall sound, go!");
+            //Debug.Log("left/right wall sound, go!");
         }
         else
         {
-            Debug.Log("hello, no sound it seems :(");
+            //Debug.Log("hello, no sound it seems :(");
         }
     }
 }

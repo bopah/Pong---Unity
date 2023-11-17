@@ -50,7 +50,7 @@ public class GameManagerScript : MonoBehaviour
     {
         playerPaddle.resetPaddlePosition();
         computerPaddle.resetPaddlePosition();
-        ball.resetPaddlePosition();
+        ball.ResetPaddlePosition();
     }
 
     public void BallHitWall(string wallName)
