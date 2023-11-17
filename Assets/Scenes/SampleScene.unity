@@ -255,7 +255,6 @@ MonoBehaviour:
   gameManager: {fileID: 567335530}
   AudioManager: {fileID: 662911102}
   fireballPrefab: {fileID: 2527298531764070780, guid: 2bddad797c2838042a856f26f2f43f67, type: 3}
-  fireballActivationMagnitude: 6
   fireTrailPrefab: {fileID: 1363784577269114, guid: 83f5e574addfb424ebd95bbb8ff8b080, type: 3}
 --- !u!58 &254656978
 CircleCollider2D:
