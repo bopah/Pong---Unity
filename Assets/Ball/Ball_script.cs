@@ -117,6 +117,7 @@ public class Ball_script : MonoBehaviour
 
     private void CheckForAllFireActivation()
     {
+        ActivateFireBurningSound();
         CheckForFireballActivation();
         CheckForFireTrailActivation();
     }
@@ -229,6 +230,19 @@ public class Ball_script : MonoBehaviour
         if (activeFireTrail != null)
         {
             activeFireTrail.transform.localScale = newScale;
+        }
+    }
+
+
+    private void ActivateFireBurningSound()
+    {
+        if (rb.velocity.magnitude >= allFireActivationMagnitude)
+        {
+            AudioManager.HandleFireSound(rb.velocity.magnitude);
+        }
+        else
+        {
+            AudioManager.StopFireSound();
         }
     }
 }
